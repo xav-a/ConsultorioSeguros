@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultorioSeguros.Server", "ConsultorioSeguros.Server\ConsultorioSeguros.Server.csproj", "{D39AEDFC-209C-4991-AD61-7EE633BD2253}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "consultorioseguros.client", "consultorioseguros.client\consultorioseguros.client.esproj", "{515EDF24-41D3-4958-AA3D-FD41AC029372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D39AEDFC-209C-4991-AD61-7EE633BD2253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39AEDFC-209C-4991-AD61-7EE633BD2253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39AEDFC-209C-4991-AD61-7EE633BD2253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39AEDFC-209C-4991-AD61-7EE633BD2253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515EDF24-41D3-4958-AA3D-FD41AC029372}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {730DAFF5-546F-4CD7-AE16-E669EC0084D8}
+	EndGlobalSection
+EndGlobal
