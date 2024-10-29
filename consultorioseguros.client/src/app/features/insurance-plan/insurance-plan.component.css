@@ -1,0 +1,17 @@
+table {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    width: 50vw;
+}
+
+table th {
+    text-align: left;
+}
+
+input {
+    margin-bottom: 3px !important;
+}
+
+label {
+    padding-right: 16px !important;
+}

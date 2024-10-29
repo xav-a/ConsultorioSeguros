@@ -1,0 +1,6 @@
+@ConsultorioSeguros.Server_HostAddress = http://localhost:5168
+
+GET {{ConsultorioSeguros.Server_HostAddress}}/Api/
+Accept: application/json
+
+###

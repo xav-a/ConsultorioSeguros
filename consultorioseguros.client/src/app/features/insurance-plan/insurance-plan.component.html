@@ -1,0 +1,52 @@
+
+<h3 id="tableLabel">Insurance Plans</h3>
+<p *ngIf="!plans"><em>Loading... Please refresh once the backend has started.</em></p>
+
+<!-- {{ model | json }} -->
+<form id="add-insurance-plan-form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="code">Código</label>
+    <input type="number" class="form-control" id="name"
+    required
+    [(ngModel)]="model.code" name="code">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Nombre</label>
+    <input type="text" class="form-control" id="last-names"
+    [(ngModel)]="model.name" name="last-names">
+  </div>
+
+  <div class="form-group">
+    <label for="premium">Prima</label>
+    <input type="number" step=".01" class="form-control" id="premium" min="18"
+    [(ngModel)]="model.premium" name="premium">
+  </div>
+
+  <div class="form-group">
+    <label for="amount">Suma Asegurada</label>
+    <input type="number" step=".01" class="form-control" id="amount"
+    [(ngModel)]="model.amount" name="amount">
+  </div>
+
+  <button type="submit">Crear</button>
+</form>
+
+<table *ngIf="plans" >
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Prima</th>
+            <th>Suma Asegurada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let plan of plans">
+            <td>{{ plan.code }}</td>
+            <td>{{ plan.name }}</td>
+            <td>{{ plan.premium | currency }}</td>
+            <td>{{ plan.amount | currency }}</td>
+        </tr>
+    </tbody>
+</table>

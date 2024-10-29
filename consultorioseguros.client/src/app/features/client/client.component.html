@@ -1,0 +1,32 @@
+
+<h3 id="tableLabel">Insurance Clients</h3>
+<p *ngIf="!clients"><em>Loading... Please refresh once the backend has started.</em></p>
+
+<table *ngIf="clients" >
+    <thead>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <td>{{ client.identificationNumber }}</td>
+            <td>{{ client.fullName }}</td>
+            <td>{{ client.age }}</td>
+            <td>{{ client.phoneNumber }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+  <label for="upload-clients">Carga masiva...</label>
+  <input id="upload-clients"
+    class="file-upload"
+    type="file"
+    accept=".txt,.csv"
+    (change)="uploadClients($event)"
+    #clientUploadInput>
+</div>

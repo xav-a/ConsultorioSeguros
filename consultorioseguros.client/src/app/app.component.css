@@ -1,0 +1,16 @@
+﻿:host {
+    max-width: 1280px;
+    padding: 2rem;
+}
+
+nav {
+    text-align: left;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.content {
+    text-align: unset;
+}
